@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 function append() {
   fs.appendFile(
-    "~/log/log.txt",
+    "app/log/log.txt",
     `${new Date()} on host ${host} \n`,
     function (err) {
       if (err) throw err;
